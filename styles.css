@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 60%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -124,7 +124,7 @@ footer a {
 /* Media query para celulares en posición vertical */
 @media only screen and (max-width: 480px) {
     .container {
-        padding: 5px;
+        padding: 10px;
     }
     
     .imagen-estilo {
@@ -132,19 +132,25 @@ footer a {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     label,
     select {
-        font-size: 12px;
+        font-size: 20px;
+        padding: 18px; /* Aumentamos el padding para hacer los select más grandes */
     }
 
     button {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     p {
         font-size: 14px;
+    }
+
+    footer {
+        font-size: 2px;
+        padding: 10px;
     }
 }
