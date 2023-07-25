@@ -15,7 +15,8 @@ body {
 
 /* Estilo para la imagen */
 .imagen-estilo {
-    width: 200px; /* Ancho de la imagen */
+    width: 100%; /* Ancho de la imagen ocupa el 100% del contenedor */
+    max-width: 200px; /* Máximo ancho de la imagen */
     height: auto; /* Altura se ajusta automáticamente para mantener la proporción */
     border: 2px solid #ccc; /* Borde de la imagen */
     border-radius: 30px; /* Bordes redondeados */
@@ -26,7 +27,8 @@ body {
 h1 {
     color: #FFF;
     margin-bottom: 20px;
-    background-color: #333
+    background-color: #333;
+    padding: 10px 0; /* Añadir espaciado alrededor del encabezado */
 }
 
 /* Estilos para las etiquetas */
@@ -69,23 +71,6 @@ p {
     font-weight: bold;
 }
 
-p1 {
-    font-size: 14px;
-}
-
-p2 {
-    
-    font-size: 10px;
-}
-
-p10 {
-    font-size: 14px;
-    font-style: italic;
-    margin-top: 10px;
-    background: #333;
-    color: #fff
-}
-
 /* Estilos para el pie de página */
 footer {
     background-color: #333;
@@ -103,4 +88,43 @@ footer a {
 #botonResultado2,
 #resultado2 {
     display: none;
+}
+
+/* Estilos para el párrafo de información adicional */
+#informacionGeneralRoca {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    display: none; /* Ocultar el párrafo inicialmente */
+}
+
+/* Media query para dispositivos móviles con un ancho de pantalla máximo de 600px */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajustar tamaño de imagen para dispositivos móviles */
+    .imagen-estilo {
+        max-width: 150px;
+    }
+
+    /* Estilos para el encabezado en dispositivos móviles */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Estilos para los párrafos de resultados en dispositivos móviles */
+    p {
+        font-size: 16px;
+    }
+
+    /* Estilos para el footer en dispositivos móviles */
+    footer {
+        font-size: 12px; /* Ajustar el tamaño de fuente para dispositivos móviles */
+        padding: 5px; /* Ajustar el padding del footer */
+    }
 }
