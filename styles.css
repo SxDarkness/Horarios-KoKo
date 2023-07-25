@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 65%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -15,12 +15,11 @@ body {
 
 /* Estilo para la imagen */
 .imagen-estilo {
-    width: 100%; /* Ancho de la imagen ocupa el 100% del contenedor */
-    max-width: 200px; /* Máximo ancho de la imagen */
-    height: auto; /* Altura se ajusta automáticamente para mantener la proporción */
-    border: 2px solid #ccc; /* Borde de la imagen */
-    border-radius: 30px; /* Bordes redondeados */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra de la imagen */
+    max-width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos para el encabezado */
@@ -28,7 +27,8 @@ h1 {
     color: #FFF;
     margin-bottom: 20px;
     background-color: #333;
-    padding: 10px 0; /* Añadir espaciado alrededor del encabezado */
+    font-size: 24px;
+    padding: 10px;
 }
 
 /* Estilos para las etiquetas */
@@ -37,6 +37,8 @@ label {
     display: block;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 16px;
+    color: #FFF;
 }
 
 /* Estilos para los select */
@@ -57,6 +59,7 @@ button {
     border-radius: 15px;
     margin-top: 15px;
     width: 100%;
+    font-size: 16px;
 }
 
 /* Estilos para los botones cuando se les pasa el cursor por encima */
@@ -69,6 +72,17 @@ p {
     font-size: 18px;
     margin-top: 15px;
     font-weight: bold;
+    color: #FFF;
+}
+
+/* Estilos para el párrafo de información adicional */
+p10 {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    display: none;
 }
 
 /* Estilos para el pie de página */
@@ -77,6 +91,7 @@ footer {
     padding: 10px;
     text-align: center;
     color: white;
+    font-size: 12px;
 }
 
 footer a {
@@ -90,41 +105,75 @@ footer a {
     display: none;
 }
 
-/* Estilos para el párrafo de información adicional */
-#informacionGeneralRoca {
-    font-size: 14px;
-    font-style: italic;
-    margin-top: 10px;
-    background: #333;
-    color: #fff;
-    display: none; /* Ocultar el párrafo inicialmente */
-}
-
-/* Media query para dispositivos móviles con un ancho de pantalla máximo de 600px */
-@media (max-width: 600px) {
-    .container {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    /* Ajustar tamaño de imagen para dispositivos móviles */
+/* Media queries para dispositivos con diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    /* Estilos para dispositivos de pantalla pequeña (como tabletas) */
     .imagen-estilo {
         max-width: 150px;
     }
-
-    /* Estilos para el encabezado en dispositivos móviles */
     h1 {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 15px;
     }
-
-    /* Estilos para los párrafos de resultados en dispositivos móviles */
+    label {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    select {
+        padding: 8px;
+        font-size: 14px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
     p {
         font-size: 16px;
+        margin-top: 10px;
     }
-
-    /* Estilos para el footer en dispositivos móviles */
+    p10 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
     footer {
-        font-size: 12px; /* Ajustar el tamaño de fuente para dispositivos móviles */
-        padding: 5px; /* Ajustar el padding del footer */
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para dispositivos de pantalla pequeña (como teléfonos celulares) */
+    .imagen-estilo {
+        max-width: 100px;
+    }
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    label {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    select {
+        padding: 8px;
+        font-size: 14px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    p10 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    footer {
+        font-size: 10px;
+        padding: 5px;
     }
 }
