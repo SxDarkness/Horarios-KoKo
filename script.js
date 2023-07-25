@@ -130,6 +130,31 @@ function consultarColectivoPerdido() {
   }
 }
 
+  // Función para mostrar información adicional cuando se selecciona "General Roca"
+  function mostrarInformacionGeneralRoca() {
+    const destinoSeleccionado = document.getElementById("destinos").value;
+    const grupoSeleccionado = document.getElementById("grupos").value;
+    const informacionElement = document.getElementById("informacionGeneralRoca");
+
+    if (
+      (grupoSeleccionado === "Villa Regina > Neuquen" && destinoSeleccionado === "General Roca (Centro)") ||
+      (grupoSeleccionado === "ETON > Villa Regina" && destinoSeleccionado === "General Roca (Terminal)")
+    ) {
+      const informacionGeneralRoca =
+        "Tenga en cuenta que vuelve a pasar por General Roca (Centro) luego de ir a la Terminal.";
+      informacionElement.textContent = informacionGeneralRoca;
+      informacionElement.style.display = "block"; // Mostrar el párrafo
+    } else {
+      informacionElement.textContent = "";
+      informacionElement.style.display = "none"; // Ocultar el párrafo
+    }
+  }
+
+  // Eventos que escuchan los cambios en los menús desplegables de destinos y grupos
+  document.getElementById("destinos").addEventListener("change", mostrarInformacionGeneralRoca);
+  document.getElementById("grupos").addEventListener("change", mostrarInformacionGeneralRoca);
+
+
     // Arrays para las opciones originales de cada grupo
     const opcionesVillaReginaNeuquen = [
         "Villa Regina (Inicio del recorrido)",
@@ -231,3 +256,4 @@ function consultarColectivoPerdido() {
         inicializarOpciones();
         actualizarOpciones();
     });
+
