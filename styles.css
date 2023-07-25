@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 50%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -37,6 +37,7 @@ label {
     display: block;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 /* Estilos para los select */
@@ -45,6 +46,7 @@ select {
     padding: 10px;
     border-radius: 15px;
     border: 1px solid #ccc;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -53,6 +55,7 @@ button {
     padding: 10px 20px;
     background-color: #3397FF;
     color: white;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     border-radius: 15px;
@@ -68,7 +71,7 @@ button:hover {
 
 /* Estilos para los párrafos de resultados */
 p {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 15px;
     font-weight: bold;
 }
@@ -80,6 +83,9 @@ footer {
     text-align: center;
     color: white;
     font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
@@ -150,7 +156,8 @@ footer a {
     }
 
     footer {
-        font-size: 2px;
+        font-size: 5px;
         padding: 10px;
     }
 }
+
