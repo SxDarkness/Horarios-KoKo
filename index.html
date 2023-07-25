@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>¿A qué hora pasa? - KoKo Horarios</title>
+    <title>Â¿A quÃ© hora pasa? - KoKo Horarios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -10,13 +11,13 @@
         
         <div>
     <!-- Imagen -->
-        <img class="imagen-estilo" src="img/_5f38c9cc-7b9b-4287-b4a4-981c44d2a8e4.jpeg" alt="Descripción de la imagen">
+        <img class="imagen-estilo" src="img/_5f38c9cc-7b9b-4287-b4a4-981c44d2a8e4.jpeg" alt="DescripciÃ³n de la imagen">
         </div>
-        <h1>Consultá tu Horario</h1>
+        <h1>ConsultÃ¡ tu Horario</h1>
         <label for="grupos">Seleccione el Servicio:</label>
             <select id="grupos" onchange="actualizarOpciones()">
-                <option value="Villa Regina > Neuquén">[Común] Villa Regina > Neuquén (ETON)</option>
-                <option value="ETON > Villa Regina">[Común] Neuquén (ETON) > Villa Regina</option>
+                <option value="Villa Regina > NeuquÃ©n">[ComÃºn] Villa Regina > NeuquÃ©n (ETON)</option>
+                <option value="ETON > Villa Regina">[ComÃºn] NeuquÃ©n (ETON) > Villa Regina</option>
             </select>
 
         <br>
@@ -39,24 +40,24 @@
         <option value="Neuquen (Centro)">Neuquen (Centro)</option>
         <option value="ETON (Final del recorrido)">ETON (Final del recorrido)</option>
         <option value="ETON (Inicio del recorrido)">ETON (Inicio del recorrido)</option>
-            <!-- Otras opciones de destinos aquí -->
+            <!-- Otras opciones de destinos aquÃ­ -->
         </select>
-        <button onclick="consultarProximoColectivo()">¡Consultá!</button>
+        <button onclick="consultarProximoColectivo()">Â¡ConsultÃ¡!</button>
         <p id="resultado1"></p>
 
-        <!-- Botón y párrafo para consultar el colectivo perdido -->
-        <button id="botonResultado2" style="display: none;" onclick="consultarColectivoPerdido()">¿A qué hora pasó el último?</button>
+        <!-- BotÃ³n y pÃ¡rrafo para consultar el colectivo perdido -->
+        <button id="botonResultado2" style="display: none;" onclick="consultarColectivoPerdido()">Â¿A quÃ© hora pasÃ³ el Ãºltimo?</button>
         <p id="resultado2" style="display: none;"></p>
     </div>
     
-    <!-- Pie de página -->
+    <!-- Pie de pÃ¡gina -->
     <footer>
         <p>Esta App no es oficial por lo tanto puede presentar fallos.<br>Horarios actualizados a la fecha 31/07/2023</p>
         
-        <p>Estamos trabajando para mejorar.<br>¿Tienes algún problema o sugerencia? <a href="mailto:reportes@tuempresa.com">Envíanos un reporte</a>.</p>
-        <p1>Horarios corresponden al Servicio Común de la empresa <a href="https://www.empresakoko.com.ar/">Empresa KOKO</a></p1><br>
+        <p>Estamos trabajando para mejorar.<br>Â¿Tienes algÃºn problema o sugerencia? <a href="mailto:reportes@tuempresa.com">EnvÃ­anos un reporte</a>.</p>
+        <p1>Horarios corresponden al Servicio ComÃºn de la empresa <a href="https://www.empresakoko.com.ar/">Empresa KOKO</a></p1><br>
         
-        <p2>Versión 1.00 - 2023</p2>
+        <p2>VersiÃ³n 1.00 - 2023</p2>
     </footer>
     
     <script src="script.js" defer></script>
