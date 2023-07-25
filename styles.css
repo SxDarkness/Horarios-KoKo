@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0067B0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para la imagen */
+.imagen-estilo {
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura se ajusta automáticamente para mantener la proporción */
+    border: 2px solid #ccc; /* Borde de la imagen */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra de la imagen */
+}
+
+/* Estilos para el encabezado */
+h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+    background-color: #333
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los select */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 20px;
+    background-color: #3397FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Estilos para los botones cuando se les pasa el cursor por encima */
+button:hover {
+    background-color: #84DDFF;
+}
+
+/* Estilos para los párrafos de resultados */
+p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+p1 {
+    font-size: 14px;
+}
+
+p2 {
+    
+    font-size: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: #84DDFF;
+    text-decoration: none;
+}
+
+/* Estilos para el botón y párrafo de resultado2 */
+#botonResultado2,
+#resultado2 {
+    display: none;
+}
